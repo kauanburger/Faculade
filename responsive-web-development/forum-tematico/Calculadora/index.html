@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculadora</title>
+  <link rel="stylesheet" href="style/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<div class="calculator">
+  <input type="text" id="display" disabled> <!--input do tipo disabled para impedir o usuário de digitar-->
+
+  <div class="buttons">
+    <button onclick="clearDisplay()" >C</button>
+    <button onclick="deleteLast()">←</button>
+    <button onclick="addDisplay('/')">/</button>
+    <button onclick="addDisplay('*')" class="operacao">*</button>
+
+    <button onclick="addDisplay('7')">7</button>
+    <button onclick="addDisplay('8')">8</button>
+    <button onclick="addDisplay('9')">9</button>
+    <button onclick="addDisplay('-')" class="operacao">-</button>
+
+    <button onclick="addDisplay('4')">4</button>
+    <button onclick="addDisplay('5')">5</button>
+    <button onclick="addDisplay('6')">6</button>
+    <button onclick="addDisplay('+')" class="operacao">+</button>
+
+    <button onclick="addDisplay('1')">1</button>
+    <button onclick="addDisplay('2')">2</button>
+    <button onclick="addDisplay('3')">3</button>
+    <button onclick="calculate()" class="operacao">=</button>
+
+    <button onclick="appaddDisplayend('0')" class="zero">0</button>
+    <button onclick="addDisplay('.')" id="ponto">.</button>
+  </div>
+</div>
+
+<script src="script/script.js"></script>
+</body>
+</html>
